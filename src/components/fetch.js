@@ -16,7 +16,8 @@ function Fetch(){
     fetching()
     },[])
 
-    console.log(posts[0]);
+    console.log(posts);
+    console.log(typeof posts);
 
 
     return(
