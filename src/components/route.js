@@ -61,3 +61,12 @@ const [posts , setPost]= useState([{"name":"Ashran"}])
         {container}
     </ul>
         )
+
+
+
+//
+
+posts.forEach(post => {container.push(
+    <li className = "hellow">hello {post.name} and <br/> his tweet is : <br/>{post.tweet}</li>
+  )
+})
