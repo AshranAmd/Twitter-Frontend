@@ -4,12 +4,11 @@ import React, { useEffect } from 'react'
 
 function Fetch(){
 
-    const [posts , setPost]= useState('[]')
+    const [posts , setPost]= useState([{"name":"Ashran"}])
     
     useEffect(()=>{
     async  function fetching(){
     const datas =  await fetch("http://localhost:8080/").then(data => data.json());
-
     setPost(datas)
     console.log(posts[0]);
 }
@@ -17,14 +16,22 @@ function Fetch(){
     },[])
 
     console.log(posts);
-    console.log(typeof posts);
 
+    const container = [];
+    
+    console.log(typeof posts);
+    var nawa = [...posts]
+    console.log(nawa);
+    console.log(typeof nawa)
+    
+    posts.forEach(post => {container.push(
+      <li className = "hellow">hello {post.name}</li>)
+
+  })
 
     return(
         <ul>
-    {Array.from(posts).forEach(async (post)=>(
-        <p>the tweet is from{post}</p>
-    ))}
+        {container}
     </ul>
         )
 
