@@ -100,7 +100,11 @@
   list-style-type: none;
 }
 
-@media only screen and (orientation:landscape){
+/* @media only screen and (orientation:landscape){
   .App{flex-direction: column;}
   
+} */
+
+#pakad{
+  list-style-type: none;
 }

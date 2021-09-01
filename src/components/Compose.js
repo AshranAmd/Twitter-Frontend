@@ -1,5 +1,5 @@
 import React from 'react'
-import Notification from './navigation'
+import Navigation from './navigation'
 import { useEffect } from 'react'
 import Suggestions from './suggestions'
 import { useState } from 'react'
@@ -36,7 +36,7 @@ function handlename(event){
 
     return(
         <div className= "compose">
-            <Notification/>
+            <Navigation/>
             <div className="compose-tweet">
             <p>Compose your Tweet</p>
             <form action="http://localhost:8080/save" method ="post">

@@ -9,31 +9,30 @@ function Fetch(){
     useEffect(()=>{
     async  function fetching(){
     const datas =  await fetch("http://localhost:8080/").then(data => data.json());
-    setPost(datas)
-    console.log(posts[0]);
+    setPost(datas);
 }
     fetching()
     },[])
 
-    console.log(posts);
-
     const container = [];
     
-    console.log(typeof posts);
-    var nawa = [...posts]
-    console.log(nawa);
-    console.log(typeof nawa)
-    
     posts.forEach(post => {container.push(
-      <li className = "hellow">hello {post.name}</li>)
-
+        <div className = 'tweets'> 
+            <div className="tweet-name">
+                <div className="name">{post.name}</div>
+                <div className="pic">
+                    <img src="C:\Users\Ashran\Documents\yes.jpg" type="image/jpg"></img>
+                </div>
+            </div>
+            <div className="tweet">{post.tweet}</div>
+        </div>
+    )
   })
 
     return(
-        <ul>
+        <li id="pakad">
         {container}
-    </ul>
+        </li>
         )
-
 }
 export  default Fetch ;
