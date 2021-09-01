@@ -95,6 +95,11 @@
   display:flex;
 }
 
+.hellow{
+  color:red;
+  list-style-type: none;
+}
+
 @media only screen and (orientation:landscape){
   .App{flex-direction: column;}
   

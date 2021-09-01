@@ -14,24 +14,16 @@ import { BrowserRouter as Router,Switch, Route} from "react-router-dom"
 import Fetch from './components/fetch';
 
 
+
 class App extends Component {
   
   render(){
   return (
     <div className = "App">
-      
-      <Router>
-            <div className="Route"> 
-                <Switch> 
-                    <Route exact path ={ "/home"} component={Home}/>
-                    <Route exact path = {"/account"} component={Account}/>
-                    <Route exact path = {"/compose"} component={Compose}/>
-                    <Route exact path = {"/trending"} component = {Trending}/>
-                </Switch>
-            </div>
-        </Router>
+      <Fetch/>
     </div>
   )}
 }
 
 export default App;
+ 
