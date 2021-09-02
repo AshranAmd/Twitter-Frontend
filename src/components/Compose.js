@@ -9,23 +9,16 @@ function Compose(){
 const [name , setName] = useState('')
 const [tweet , setTweet] = useState('')
 
-useEffect(()=>{
-   
+
+// form.onsubmit = async (e)=>{
+//     e.preventDefault();
+
+//     var url = "http://localhost:8080/save";
+
+//         fetch(url, {method:'POST',
+//         body: new FormData(form)})
+//     }
     
-    var name1 = name;
-    var tweet1 = tweet;
-
-    })
-
-function submit(){
-
-    var url = "http://localhost:8080/save";
-
-        fetch(url, {method:'POST',
-        body:JSON.stringify({name,tweet})
-                     })
-    }
-
 
 function handletweet(event){
     setTweet(event.target.value)
@@ -38,13 +31,27 @@ function handlename(event){
         <div className= "compose">
             <Navigation/>
             <div className="compose-tweet">
+            
             <p>Compose your Tweet</p>
-            <form action="http://localhost:8080/save" method ="post">
-                <input type="text" className="twitter"
-                 placeholder ="Your Name" onChange={handlename}></input><br/>
-                <textarea name = "tweet-content" placeholder="Tweet here..."
-                onChange = {handletweet}></textarea><br/>
-                <input type="submit" onClick={submit}></input><br/>
+            
+            <form id="form" action="http://localhost:8080/save" method ="post" >
+                
+                <input type="text" name="twitter"
+                 placeholder ="Your Name" onChange={handlename}>
+                </input>
+                
+                <br/>
+                
+                <input type="text" name = "tweetContent" placeholder="Tweet here..."
+                onChange = {handletweet}>
+                </input>
+                
+                <br/>
+                
+                <input type="submit" ></input>
+                
+                <br/>
+                
                 Maximum size - 140 characters
             </form>
             </div>

@@ -12,6 +12,9 @@ import Compose from './components/Compose'
 import Home from './components/Home'
 import { BrowserRouter as Router,Switch, Route} from "react-router-dom"
 import Fetch from './components/fetch';
+import Collections from './components/Collections';
+import Messages from './components/Messages';
+import Notification from './components/Notification';
 
 
 
@@ -27,6 +30,9 @@ class App extends Component {
                   <Route exact path = {"/account"} component={Account}/>
                   <Route exact path = {"/compose"} component={Compose}/>
                   <Route exact path = {"/trending"} component = {Trending}/>
+                  <Route exact path = {"/tweets"} component = {Collections}/>
+                  <Route exact path = {"/messages"} component = {Messages}/>
+                  <Route exact path = {"/notifications"} component = {Notification}/>
               </Switch>
           </div>
       </Router>
