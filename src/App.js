@@ -15,6 +15,8 @@ import Fetch from './components/fetch';
 import Collections from './components/Collections';
 import Messages from './components/Messages';
 import Notification from './components/Notification';
+import Register from './components/register';
+import Login from './components/login';
 
 
 
@@ -33,6 +35,8 @@ class App extends Component {
                   <Route exact path = {"/tweets"} component = {Collections}/>
                   <Route exact path = {"/messages"} component = {Messages}/>
                   <Route exact path = {"/notifications"} component = {Notification}/>
+                  <Route exact path = {"/register"} component = {Register}/>
+                  <Route exact path = {"/login"} component = {Login}/>
               </Switch>
           </div>
       </Router>
