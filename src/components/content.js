@@ -3,8 +3,6 @@ import Tweet from './Tweet'
 import Fetch from "./fetch"
 
 
-
-
 function Content(){
     return(
         <div className='content'>

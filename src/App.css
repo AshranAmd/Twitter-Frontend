@@ -108,3 +108,13 @@
 #pakad{
   list-style-type: none;
 }
+
+.settings{
+  background-color: aqua;
+  
+}
+
+#account{
+  display: flex;
+  flex-direction: row;
+}
