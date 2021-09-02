@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 
 function Fetch(){
 
-    const [posts , setPost]= useState([{"name":"Ashran"}])
+    const [posts , setPost]= useState([{"name":"Admin","tweet":"Internet Connection is Missing , Try again after reassuring the connection ."}])
     
     useEffect(()=>{
     async  function fetching(){

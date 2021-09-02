@@ -33,7 +33,7 @@ function Tweet(props){
             <div className="tweet">{props.tweet}</div>
         </div>
     )
-}
+}   
 
 
 export default Tweet 
