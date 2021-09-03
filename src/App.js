@@ -36,6 +36,7 @@ class App extends Component {
                   <Route exact path = {"/messages"} component = {Messages}/>
                   <Route exact path = {"/notifications"} component = {Notification}/>
                   <Route exact path = {"/register"} component = {Register}/>
+                  <Route exact path = {"/"} component = {Register}/>
                   <Route exact path = {"/login"} component = {Login}/>
               </Switch>
           </div>
