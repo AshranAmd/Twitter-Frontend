@@ -8,7 +8,7 @@ function Fetch(){
     
     useEffect(()=>{
     async  function fetching(){
-    const datas =  await fetch("http://localhost:8080/").then(data => data.json());
+    const datas =  await fetch("http://localhost:8080/tweet").then(data => data.json());
     setPost(datas);
 }
     fetching()
